@@ -1,11 +1,15 @@
 // BUY and SELL EASILY start
 .buySell {
-    padding: 75px 0 90px;
+    padding: 80px 0 90px;
 }
 
 // img-sce
 .img-sce {
+    position: relative;
+
     img {
+        margin: 0 auto;
+        display: block;
     }
 }
 

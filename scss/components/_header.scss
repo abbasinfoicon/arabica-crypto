@@ -4,6 +4,7 @@
 
     &_navbar {
         display: block;
+        padding: 28px 0 25px;
 
         &_section {
             display: flex;
@@ -22,6 +23,7 @@
 
                 &-collapse {
                     justify-content: flex-end;
+                    padding-top: 11px;
                 }
 
                 &-nav {
@@ -37,10 +39,18 @@
                                     color: $white;
                                     font-size: 19px;
                                     font-weight: 500;
-                                    padding: 0 15px;
+                                    padding: 0 14px;
 
                                     &:hover {
                                         color: $main;
+                                    }
+                                }
+                            }
+
+                            &:first-child {
+                                a {
+                                    &.nav-link {
+                                        padding-left: 0;
                                     }
                                 }
                             }
@@ -57,7 +67,19 @@
                         display: inline-block;
 
                         &.loginButton {
-                            padding-right: 20px;
+                            padding-right: 10px;
+                            position: relative;
+                            top: -2px;
+
+                            .custom-btn {
+                                letter-spacing: 0.2px;
+
+                                &:hover {
+                                    background-color: darken($main, 20);
+                                    color: $white;
+                                    border-color: darken($main, 20);
+                                }
+                            }
                         }
                     }
                 }

@@ -265,6 +265,7 @@ input:visited {
 
 .header_navbar {
   display: block;
+  padding: 28px 0 25px;
 }
 
 .header_navbar_section {
@@ -280,6 +281,7 @@ input:visited {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 11px;
 }
 
 .header_navbar_section .navbar-nav {
@@ -295,11 +297,15 @@ input:visited {
   color: #fff;
   font-size: 19px;
   font-weight: 500;
-  padding: 0 15px;
+  padding: 0 14px;
 }
 
 .header_navbar_section .navbar-nav li.nav-item a.nav-link:hover {
   color: #00a5e9;
+}
+
+.header_navbar_section .navbar-nav li.nav-item:first-child a.nav-link {
+  padding-left: 0;
 }
 
 .header_navbar_section .navbar-lang {
@@ -313,7 +319,19 @@ input:visited {
 }
 
 .header_navbar_section .navbar-lang li.loginButton {
-  padding-right: 20px;
+  padding-right: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.header_navbar_section .navbar-lang li.loginButton .custom-btn {
+  letter-spacing: 0.2px;
+}
+
+.header_navbar_section .navbar-lang li.loginButton .custom-btn:hover {
+  background-color: #005d83;
+  color: #fff;
+  border-color: #005d83;
 }
 
 .language select {
@@ -349,7 +367,7 @@ section {
 }
 
 .container-fluid {
-  max-width: 1520px;
+  max-width: 1535px;
 }
 
 @media (max-width: 1550px) {
@@ -359,23 +377,27 @@ section {
   }
 }
 
+.title {
+  padding-left: 60px;
+}
+
 .title h3 {
   font-size: 50px;
   color: #00a5e9;
   text-transform: uppercase;
   position: relative;
   font-weight: 700;
-  line-height: 1.4;
-  padding-left: 65px;
+  line-height: 1.2;
+  margin-bottom: 7px;
 }
 
 .title h3:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 37px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  left: -65px;
   background-color: #00a5e9;
   width: 44px;
   height: 2px;
@@ -385,30 +407,40 @@ section {
   font-size: 40px;
   color: #00a5e9;
   font-weight: 700;
+  margin-bottom: 23px;
+  line-height: 1.2;
 }
 
 .title p {
   font-size: 30px;
   color: #000;
   font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 22px;
 }
 
-.title .small_sec p {
-  font-size: 18px;
-  color: #252a40;
-  font-weight: 300;
+.title .btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
 }
 
-.title .small_sec p strong {
-  text-transform: uppercase;
-  font-weight: 400;
+.title .btn-list li {
+  list-style: none;
 }
 
-.title .small_sec .ul_withImg {
+@media (max-width: 768px) {
+  .title .btn-list li a {
+    min-width: 280px;
+  }
+}
+
+.title .ul_withImg {
   padding-left: 5px;
 }
 
-.title .small_sec .ul_withImg li {
+.title .ul_withImg li {
   font-size: 18px;
   color: #252a40;
   font-weight: 300;
@@ -417,7 +449,7 @@ section {
   margin-bottom: 25px;
 }
 
-.title .small_sec .ul_withImg li:before {
+.title .ul_withImg li:before {
   content: "";
   position: absolute;
   left: 0;
@@ -429,21 +461,18 @@ section {
   height: 19px;
 }
 
-.title .small_sec .btn-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 25px;
+.title .small_sec p {
+  font-size: 18px;
+  color: #252a40;
+  font-weight: 300;
+  letter-spacing: -0.12px;
 }
 
-.title .small_sec .btn-list li {
-  list-style: none;
-}
-
-@media (max-width: 768px) {
-  .title .small_sec .btn-list li a {
-    min-width: 280px;
-  }
+.title .small_sec p strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: -22px;
+  display: block;
 }
 
 .title_2 h3 {
@@ -458,11 +487,11 @@ section {
 }
 
 .custom-btn {
-  font-style: 18px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
   background-color: #00a5e9;
-  padding: 18px 35px;
+  padding: 11px 16px 10px;
   border: 1px solid #00a5e9;
   min-width: 210px;
   text-align: center;
@@ -475,11 +504,20 @@ section {
 }
 
 .buySell {
-  padding: 75px 0 90px;
+  padding: 80px 0 90px;
+}
+
+.img-sce {
+  position: relative;
+}
+
+.img-sce img {
+  margin: 0 auto;
+  display: block;
 }
 
 .development-sustainable {
-  padding: 70px 0 100px;
+  padding: 80px 0 100px;
   background-image: url(../img/bg-img.jpg);
   background-size: contain;
   background-position: center right;
@@ -487,12 +525,17 @@ section {
   background-color: #000;
 }
 
+.development-sustainable .title h3 {
+  margin-bottom: 52px;
+}
+
 .development-sustainable .title p {
   color: #fff;
+  margin-bottom: 35px;
 }
 
 .about-sec {
-  padding: 60px 0 30px;
+  padding: 63px 0 32px;
   background-image: url(../img/coffee-img.png);
   background-size: contain;
   background-position: center left;
@@ -500,8 +543,21 @@ section {
   background-color: #fff;
 }
 
+.about-sec .title {
+  padding-left: 0;
+}
+
+.about-sec .title h3 {
+  padding-left: 65px;
+  margin-bottom: 20px;
+}
+
+.about-sec .title h3:before {
+  left: 0;
+}
+
 .technologie {
-  padding: 70px 0 550px;
+  padding: 66px 0 530px;
   background-image: url(../img/technolog.png);
   background-size: contain;
   background-position: bottom;
@@ -509,12 +565,29 @@ section {
   background-color: #000;
 }
 
+.technologie .title h3 {
+  margin-bottom: 30px;
+}
+
+.technologie .title h4 {
+  margin-bottom: 15px;
+}
+
 .technologie .title p {
   color: #fff;
+  letter-spacing: 0.22px;
 }
 
 .exchange {
-  padding: 70px 0;
+  padding: 73px 0;
+}
+
+.exchange .title h3 {
+  margin-bottom: 45px;
+}
+
+.exchange .title p {
+  margin-bottom: 40px;
 }
 
 .nft {

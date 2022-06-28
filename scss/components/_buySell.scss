@@ -1,0 +1,55 @@
+// BUY and SELL EASILY start
+.buySell {
+    padding: 75px 0 90px;
+}
+
+// img-sce
+.img-sce {
+    img {
+    }
+}
+
+// tab-acheter
+.tab-acheter {
+    // nav
+    .nav {
+        &-tabs {
+            .nav-item {
+                .nav-link {
+                    &.active {
+                    }
+                }
+            }
+        }
+    }
+
+    // tab
+    .tab {
+        &-content {
+        }
+
+        &-pane {
+            &.active {
+            }
+
+            // form-sec
+            .form-sec {
+                label {
+                }
+
+                // input_rel
+                .input_rel {
+                    input {
+                    }
+
+                    select {
+                    }
+
+                    span {
+                    }
+                }
+            }
+        }
+    }
+}
+// BUY and SELL EASILY end

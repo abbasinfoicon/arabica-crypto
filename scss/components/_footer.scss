@@ -1,0 +1,54 @@
+// footer start
+.footer {
+    background-color: $black;
+    padding: 35px 0 55px;
+
+    &-top {
+    }
+
+    &-logo {
+        a {
+            img {
+            }
+        }
+
+        .footer-lang {
+            select {
+            }
+        }
+    }
+
+    &-bottom {
+        &-flex {
+        }
+    }
+
+    &-newsletter {
+        label {
+        }
+        input {
+        }
+    }
+
+    &-menu {
+        ul {
+            li {
+                a {
+                }
+            }
+        }
+    }
+
+    &-social {
+        ul {
+            li {
+                a {
+                    i {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer end

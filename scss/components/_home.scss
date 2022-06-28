@@ -1,0 +1,149 @@
+header,
+footer,
+section {
+    @include full-width;
+}
+
+// container-fluid
+.container-fluid {
+    max-width: 1520px;
+
+    @include mq(max, 1550px) {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+}
+
+// title start
+.title {
+    h3 {
+        font-size: 50px;
+        color: $main;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 700;
+        line-height: 1.4;
+        padding-left: 65px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background-color: $main;
+            width: 44px;
+            height: 2px;
+        }
+    }
+
+    h4 {
+        font-size: 40px;
+        color: $main;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 30px;
+        color: $black;
+        font-weight: 300;
+    }
+
+    // small_sec
+    .small_sec {
+        p {
+            font-size: 18px;
+            color: $text;
+            font-weight: 300;
+
+            strong {
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+
+        // ul_withImg
+        .ul_withImg {
+            padding-left: 5px;
+
+            li {
+                font-size: 18px;
+                color: $text;
+                font-weight: 300;
+                position: relative;
+                padding-left: 33px;
+                margin-bottom: 25px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    background-image: url(../img/check-img.png);
+                    background-repeat: no-repeat;
+                    background-size: 19px;
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+
+        // btn-list
+        .btn-list {
+            display: flex;
+            gap: 25px;
+
+            li {
+                list-style: none;
+
+                a {
+                    @include mq(max, 768px) {
+                        min-width: 280px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_2 {
+        h3 {
+            font-size: 30px;
+            color: $main;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+        }
+    }
+}
+// title end
+
+// custom-btn start
+.custom-btn {
+    font-style: 18px;
+    font-weight: 600;
+    color: $white;
+    background-color: $main;
+    padding: 18px 35px;
+    border: 1px solid $main;
+    min-width: 210px;
+    text-align: center;
+
+    &:hover {
+        background-color: transparent;
+        border-color: $main;
+        color: $main;
+    }
+}
+// custom-btn end
+
+@import "./slider";
+@import "./buySell";
+@import "./development-sustainable";
+@import "./about-sec";
+@import "./technologie";
+@import "./exchange";
+@import "./echanger";
+@import "./nft";

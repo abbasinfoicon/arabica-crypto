@@ -1,0 +1,19 @@
+// technologie section start
+.technologie {
+    padding: 70px 0 550px;
+    background-image: url(../img/technolog.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: $black;
+
+
+    .title{
+        h3{}
+
+        p{
+            color: $white;
+        }
+    }
+}
+// technologie section end

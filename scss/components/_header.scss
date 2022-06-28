@@ -1,0 +1,95 @@
+// header start
+.header {
+    background-color: $black;
+
+    &_navbar {
+        display: block;
+
+        &_section {
+            display: flex;
+            align-items: center;
+
+            .navbar {
+                &-brand {
+                    img {
+                    }
+                }
+
+                &-toggler {
+                    &-icon {
+                    }
+                }
+
+                &-collapse {
+                    justify-content: flex-end;
+                }
+
+                &-nav {
+                    font-size: 0;
+                    padding-right: 15px;
+
+                    li {
+                        display: inline-block;
+
+                        &.nav-item {
+                            a {
+                                &.nav-link {
+                                    color: $white;
+                                    font-size: 19px;
+                                    font-weight: 500;
+                                    padding: 0 15px;
+
+                                    &:hover {
+                                        color: $main;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-lang {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        display: inline-block;
+
+                        &.loginButton {
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// language
+.language {
+    select {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        color: $white;
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        option {
+            color: $black;
+            font-size: 15px;
+        }
+    }
+}
+
+// header end

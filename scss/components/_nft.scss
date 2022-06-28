@@ -1,0 +1,59 @@
+// NFT Section start
+.nft {
+    padding: 70px 0;
+
+    background-image: url(../img/blockchain-bg.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: $white;
+
+    &_section {
+        .media {
+            &-left {
+                img {
+                }
+            }
+
+            &-body {
+            }
+        }
+    }
+}
+
+// imgContent
+.imgContent {
+    .media {
+        &-left {
+            .img-style {
+                img {
+                }
+            }
+        }
+
+        &-body {
+            p {
+                strong {
+                }
+            }
+        }
+    }
+}
+
+// right_sec
+.right_sec {
+    h3 {
+    }
+    h5 {
+    }
+
+    ol {
+        li {
+            ul {
+                li {
+                }
+            }
+        }
+    }
+}
+// NFT Section end

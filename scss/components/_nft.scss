@@ -32,7 +32,11 @@
             &-left {
                 padding-right: 5px;
 
-                img {}
+                img {
+                    @include mq(max, 1366px) {
+                        height: 200px;
+                    }
+                }
             }
 
             &-body {}
@@ -51,7 +55,10 @@
                 width: 196px;
                 height: 196px;
 
-                img {}
+                img {
+
+                    
+                }
             }
         }
 
@@ -64,6 +71,10 @@
                 strong {
                     font-size: 18px;
                     text-transform: uppercase;
+
+                    @include mq(max, 1366px) {
+                        font-size: 15px;
+                    }
                 }
 
             }

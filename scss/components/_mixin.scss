@@ -547,4 +547,4 @@ background-image: url('../img/' + $img + '.' + $extension);
 }
 
 
-//@include mg(min/max, any_size(400));
+//@include mq(min/max, any_size(400));

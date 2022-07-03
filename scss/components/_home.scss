@@ -27,6 +27,11 @@ section {
         line-height: 1.2;
         margin-bottom: 7px;
 
+        @include mq(max, 1366px) {
+            font-size: 36px;
+            margin-bottom: 2px;
+        }
+
         &:before {
             content: "";
             position: absolute;
@@ -36,6 +41,12 @@ section {
             background-color: $main;
             width: 44px;
             height: 2px;
+
+            @include mq(max, 1366px) {
+                top: 26px;
+                left: -45px;
+                width: 34px;
+            }
         }
     }
 
@@ -45,6 +56,11 @@ section {
         font-weight: 700;
         margin-bottom: 23px;
         line-height: 1.2;
+
+        @include mq(max, 1366px) {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
     }
 
     p {
@@ -53,6 +69,11 @@ section {
         font-weight: 300;
         line-height: 1.2;
         margin-bottom: 22px;
+
+        @include mq(max, 1366px) {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
     }
 
     // btn-list
@@ -83,6 +104,11 @@ section {
             padding-left: 33px;
             margin-bottom: 25px;
 
+            @include mq(max, 1366px) {
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+
             &:before {
                 content: "";
                 position: absolute;
@@ -105,11 +131,19 @@ section {
             font-weight: 300;
             letter-spacing: -0.12px;
 
+            @include mq(max, 1366px) {
+                font-size: 15px;
+            }
+
             strong {
                 text-transform: uppercase;
                 font-weight: 400;
                 margin-bottom: -22px;
                 display: block;
+
+                @include mq(max, 1366px) {
+                    margin-bottom: -15px;
+                }
             }
         }
     }
@@ -120,6 +154,10 @@ section {
             color: $main;
             font-weight: 700;
             text-align: center;
+
+            @include mq(max, 1366px) {
+                font-size: 24px;
+            }
         }
 
         img {
@@ -127,6 +165,7 @@ section {
         }
     }
 }
+
 // title end
 
 // custom-btn start
@@ -140,12 +179,26 @@ section {
     min-width: 210px;
     text-align: center;
 
+    @include mq(max, 1366px) {
+        font-size: 15px;
+        padding: 8px 15px 6px;
+    }
+
     &:hover {
         background-color: transparent;
         border-color: $main;
         color: $main;
     }
 }
+
+@include mq(max, 1366px) {
+
+    p,
+    li {
+        font-size: 15px
+    }
+}
+
 // custom-btn end
 
 @import "./slider";

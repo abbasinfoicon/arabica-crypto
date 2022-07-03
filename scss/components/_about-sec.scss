@@ -7,12 +7,20 @@
     background-repeat: no-repeat;
     background-color: $white;
 
+    @include mq(max, 1366px){
+        padding: 40px 0 25px;
+    }
+
     .title {
         padding-left: 0;
 
         h3 {
             padding-left: 65px;
             margin-bottom: 20px;
+
+            @include mq(max, 1366px){
+                margin-bottom: 10px;
+            }
 
             &:before {
                 left: 0;

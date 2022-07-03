@@ -4,36 +4,85 @@
     padding: 35px 0 55px;
 
     &-top {
+        margin-bottom: 15px;
     }
 
     &-logo {
+        display: flex;
+        align-items: flex-end;
+
         a {
-            img {
-            }
+            margin-right: 27px;
+
+            img {}
         }
 
         .footer-lang {
-            select {
-            }
+            padding-bottom: 20px;
+
+            select {}
         }
     }
 
     &-bottom {
         &-flex {
+            display: flex;
+            justify-content: space-around;
         }
     }
 
     &-newsletter {
         label {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 300;
+            display: block;
+            color: $white;
+            padding-left: 12px;
         }
+
         input {
+            width: 260px;
+            height: 40px;
+            border-radius: 35px;
+            padding: 6px 12px;
         }
     }
 
     &-menu {
+        // text-align: center;
+
         ul {
+            margin-bottom: 15px;
+
             li {
+                display: inline-block;
+
                 a {
+                    font-size: 19px;
+                    font-weight: 500;
+                    color: $white;
+                    padding: 0 10px;
+                }
+
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            &.secnd-menu {
+                li {
+                    display: inline-block;
+                    color: $white;
+                    font-weight: 300;
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 300;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -41,10 +90,15 @@
 
     &-social {
         ul {
+            display: flex;
+
             li {
                 a {
-                    i {
-                    }
+                    color: $white;
+                    padding-right: 17px;
+                    font-size: 28px;
+
+                    i {}
                 }
             }
         }

@@ -9,14 +9,33 @@
     background-color: $white;
 
     &_section {
+        padding-left: 157px;
+        margin-bottom: 157px;
+
+        h3 {
+            padding-left: 60px;
+            margin-bottom: 20px;
+
+            &::before {
+                left: 0;
+            }
+        }
+
+        // small_sec
+        .small_sec {
+            margin-bottom: 75px;
+        }
+
         .media {
+            display: flex;
+
             &-left {
-                img {
-                }
+                padding-right: 5px;
+
+                img {}
             }
 
-            &-body {
-            }
+            &-body {}
         }
     }
 }
@@ -24,17 +43,46 @@
 // imgContent
 .imgContent {
     .media {
+        display: flex;
+        align-items: center;
+
         &-left {
             .img-style {
-                img {
-                }
+                width: 196px;
+                height: 196px;
+
+                img {}
             }
         }
 
         &-body {
+            padding: 0 30px;
+
             p {
+                line-height: 1.4;
+
                 strong {
+                    font-size: 18px;
+                    text-transform: uppercase;
                 }
+
+            }
+
+            &.text-left {
+                text-align: left;
+            }
+
+            &.text-right {
+                text-align: right;
+            }
+        }
+
+        &-right {
+            .img-style {
+                width: 196px;
+                height: 196px;
+
+                img {}
             }
         }
     }
@@ -43,17 +91,37 @@
 // right_sec
 .right_sec {
     h3 {
+        font-size: 33px;
+        margin-bottom: 30px;
+
+        &::before {
+            top: 25px;
+        }
     }
+
     h5 {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $main;
+        margin-bottom: 15px;
     }
 
     ol {
+        padding: 0;
+        margin: 0;
+        padding-left: 15px;
+        margin-bottom: 30px;
+
         li {
+            margin-bottom: 15px;
+
             ul {
                 li {
+                    margin-bottom: 0;
                 }
             }
         }
     }
 }
+
 // NFT Section end

@@ -590,6 +590,15 @@ section {
   margin-bottom: 40px;
 }
 
+.echanger {
+  margin-bottom: 55px;
+}
+
+.echanger .title_2 h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .nft {
   padding: 70px 0;
   background-image: url(../img/blockchain-bg.png);
@@ -599,8 +608,195 @@ section {
   background-color: #fff;
 }
 
+.nft_section {
+  padding-left: 157px;
+  margin-bottom: 157px;
+}
+
+.nft_section h3 {
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+.nft_section h3::before {
+  left: 0;
+}
+
+.nft_section .small_sec {
+  margin-bottom: 75px;
+}
+
+.nft_section .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nft_section .media-left {
+  padding-right: 5px;
+}
+
+.imgContent .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgContent .media-left .img-style {
+  width: 196px;
+  height: 196px;
+}
+
+.imgContent .media-body {
+  padding: 0 30px;
+}
+
+.imgContent .media-body p {
+  line-height: 1.4;
+}
+
+.imgContent .media-body p strong {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.imgContent .media-body.text-left {
+  text-align: left;
+}
+
+.imgContent .media-body.text-right {
+  text-align: right;
+}
+
+.imgContent .media-right .img-style {
+  width: 196px;
+  height: 196px;
+}
+
+.right_sec h3 {
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+
+.right_sec h3::before {
+  top: 25px;
+}
+
+.right_sec h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00a5e9;
+  margin-bottom: 15px;
+}
+
+.right_sec ol {
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.right_sec ol li {
+  margin-bottom: 15px;
+}
+
+.right_sec ol li ul li {
+  margin-bottom: 0;
+}
+
 .footer {
   background-color: #000;
   padding: 35px 0 55px;
+}
+
+.footer-top {
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-logo a {
+  margin-right: 27px;
+}
+
+.footer-logo .footer-lang {
+  padding-bottom: 20px;
+}
+
+.footer-bottom-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-newsletter label {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  padding-left: 12px;
+}
+
+.footer-newsletter input {
+  width: 260px;
+  height: 40px;
+  border-radius: 35px;
+  padding: 6px 12px;
+}
+
+.footer-menu ul {
+  margin-bottom: 15px;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+}
+
+.footer-menu ul li a {
+  font-size: 19px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.footer-menu ul li:first-child a {
+  padding-left: 0;
+}
+
+.footer-menu ul.secnd-menu li {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer-menu ul.secnd-menu li a {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  padding-right: 17px;
+  font-size: 28px;
 }
 /*# sourceMappingURL=style.min.css.map */

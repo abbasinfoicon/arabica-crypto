@@ -1,0 +1,93 @@
+.vodiapicker {
+    display: none;
+}
+
+#a {
+    padding-left: 0px;
+}
+
+#a li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+#a li:hover {
+    background-color: #f4f3f3;
+}
+
+#a li img {
+    margin: 5px;
+}
+
+#a li span,
+.btn-select li span {
+    margin-left: 8px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+}
+
+/* item list */
+
+.b {
+    display: none;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #b1b1b1;
+    z-index: 99;
+    position: relative;
+    background: #fff;
+}
+
+.open {
+    display: show !important;
+}
+
+.btn-select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    background: url(../img/down-arrow.png) $white;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.btn-select li {
+    list-style: none;
+    float: left;
+    padding-bottom: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-select li img {
+    padding-left: 5px;
+}
+
+.btn-select:hover li {
+    margin-left: 0px;
+}
+
+.btn-select:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-select:focus {
+    outline: none;
+}
+
+.lang-select {
+    height: 100%;
+}
